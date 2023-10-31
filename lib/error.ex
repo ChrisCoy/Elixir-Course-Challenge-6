@@ -10,6 +10,8 @@ defmodule Exmeal.Error do
     }
   end
 
-  def build_meal_not_found_error, do: build()
-  def build_user_not_found_error, do: build()
+  # defde build_meal_not_found_error, do: build()
+  defdelegate build_meal_not_found_error(status, result), to: __MODULE__, as: :build
+  defdelegate build_user_not_found_error(status, result), to: __MODULE__, as: :build
+  # def build_user_not_found_error, do: build()
 end

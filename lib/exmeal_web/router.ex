@@ -1,6 +1,8 @@
 defmodule ExmealWeb.Router do
   use ExmealWeb, :router
 
+  # alias ExmealWeb.{UsersController, MealsController}
+
   pipeline :api do
     plug :accepts, ["json"]
   end
