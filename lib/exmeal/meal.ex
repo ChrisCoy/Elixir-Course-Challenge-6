@@ -13,7 +13,7 @@ defmodule Exmeal.Meal do
     field(:calories, :integer)
     field(:date, :date)
     field(:description, :string)
-    belongs_to(:user_id, Exmeal.User)
+    belongs_to(:user, Exmeal.User)
     # field(:user_id, :binary_id)
 
     timestamps()
