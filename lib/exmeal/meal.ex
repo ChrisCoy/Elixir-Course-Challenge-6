@@ -14,7 +14,6 @@ defmodule Exmeal.Meal do
     field(:date, :date)
     field(:description, :string)
     belongs_to(:user, Exmeal.User)
-    # field(:user_id, :binary_id)
 
     timestamps()
   end
